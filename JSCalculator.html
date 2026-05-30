@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./CalculatorStyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <title>JavaScript Calculator</title>
+  </head>
+
+  <body>
+    <h1>
+      JavaScript Calculator
+      <i class="fa-regular fa-clock clock-button"></i>
+    </h1>
+
+    <form name="calculator">
+      <table>
+        <tr>
+          <td colspan="4">
+            <input type="text" class="display" name="display" value="" disabled>
+          </td>
+        </tr>
+
+        <tr>
+          <td><input type="button" value="C" onclick="get_calc(this)"></td>
+          <td><input type="button" value="AC" onclick="get_calc(this)"></td>
+          <td><input type="button" value="%" onclick="get_calc(this)"></td>
+          <td><input type="button" value="÷" class="operator" name="div_btn" onclick="get_calc(this)"></td>
+        </tr>
+
+        <tr>
+          <td><input type="button" value="7" onclick="get_calc(this)"></td>
+          <td><input type="button" value="8" onclick="get_calc(this)"></td>
+          <td><input type="button" value="9" onclick="get_calc(this)"></td>
+          <td><input type="button" value="×" class="operator" name="multi_btn" onclick="get_calc(this)"></td>
+        </tr>
+
+        <tr>
+          <td><input type="button" value="4" onclick="get_calc(this)"></td>
+          <td><input type="button" value="5" onclick="get_calc(this)"></td>
+          <td><input type="button" value="6" onclick="get_calc(this)"></td>
+          <td><input type="button" value="-" class="operator" onclick="get_calc(this)"></td>
+        </tr>
+
+        <tr>
+          <td><input type="button" value="1" onclick="get_calc(this)"></td>
+          <td><input type="button" value="2" onclick="get_calc(this)"></td>
+          <td><input type="button" value="3" onclick="get_calc(this)"></td>
+          <td><input type="button" value="+" class="operator" onclick="get_calc(this)"></td>
+        </tr>
+
+        <tr>
+          <td><input type="button" value="" class="empty" disabled></td>
+          <td><input type="button" value="0" onclick="get_calc(this)"></td>
+          <td><input type="button" value="." class="float" onclick="get_calc(this)"></td>
+          <td><input type="button" value="=" class="equal" onclick="get_calc(this)"></td>
+        </tr>
+
+      </table>
+    </form>
+
+    <div id="history-modal">
+
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h2>Calculation History</h2>
+
+          <span id="close-modal">&times;</span>
+        </div>
+
+        <div id="history-list">
+          <!-- history of calculation -->
+        </div>
+
+      </div>
+
+    </div>
+
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-app.js";
+      import { getFirestore, collection, addDoc, getDocs, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-firestore.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyCv2ZMhkyzkZBqHt1rt__WIhKluBBv0WIU",
+        authDomain: "jscalculator-b3703.firebaseapp.com",
+        projectId: "jscalculator-b3703",
+        storageBucket: "jscalculator-b3703.firebasestorage.app",
+        messagingSenderId: "564746679187",
+        appId: "1:564746679187:web:4a2487e20de85dad8a6e66"
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const db = getFirestore(app);
+      
+      // Global
+      window.db = db;
+      window.collection = collection;
+      window.addDoc = addDoc;
+      window.getDocs = getDocs;
+      window.serverTimestamp = serverTimestamp;
+    </script>
+
+    <script src="./JSCalculator.js"></script>
+  </body>
+
+</html>
