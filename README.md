@@ -58,7 +58,7 @@ Modern web browser (Chrome, Edge, Safari, etc.)
 Firebase account (free tier Spark Plan)
 
 1. Clone the repository
-git clone https://github.com/your-username/JSCalculator.git
+git clone https://github.com/ShoheiK12/JSCalculator.git
 
 2. Move into the project directory
 cd JSCalculator
