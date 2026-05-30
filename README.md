@@ -1,15 +1,14 @@
 # JavaScript Calculator (with Firebase History)
 
-A web-based calculator application built with **HTML, CSS, and JavaScript**, featuring cloud-based calculation history using **Google Firebase Firestore**.
-
+A web-based calculator built with HTML, CSS and JavaScript, featuring a clean user interface and basic arithmetic operations. It integrates Firebase Firestore to store and retrieve calculation history in the cloud. Users can view their past calculations from the last seven days via a modal window.
 ---
 
-## Live Demo
+## 🎥 Live Demo
 GitHub Pages:
-
+Available at [here](https://shoheik12.github.io/)
 ---
 
-## Features
+## ✨ Features
 
 - Basic arithmetic operations (+, −, ×, ÷)
 - Decimal input support
@@ -22,28 +21,27 @@ GitHub Pages:
 
 ---
 
-## Firebase Integration
-
-This project uses **Firebase Firestore** as a backend database to store calculation history.
-
-### Stored Data Structure
-
-
-### Features enabled:
-- Add calculation history (`addDoc`)
-- Retrieve history (`getDocs`)
-- Filter last 7 days of data
-- Cloud synchronization
-
----
-
-## Tech Stack
+## 🛠️ Tech Stack
 
 - HTML5
 - CSS3
 - Modern JS
 - Firebase Firestore
 - GitHub Pages
+
+---
+
+## 📱 Firebase Integration
+
+This project uses **Firebase Firestore** as a backend database to store calculation history.
+
+### Stored Data Structure
+
+history (collection)
+├── document
+│ ├── expression: "3+5"
+│ ├── result: 8
+│ ├── createdAt: timestamp
 
 ---
 
@@ -57,19 +55,39 @@ This project uses **Firebase Firestore** as a backend database to store calculat
 
 ---
 
-## UI Overview
+## Setup / Installation
+0. Prerequisites
+Modern web browser (Chrome, Edge, Safari, etc.)
+Firebase account (free tier Spark Plan)
 
-- Calculator interface with button grid layout
-- History modal accessed via clock icon
-- Clean and responsive design
+1. Clone the repository
+git clone https://github.com/your-username/JSCalculator.git
 
+2. Move into the project directory
+cd JSCalculator
+
+3. Open the project in a browser
+You can run the project locally by simply opening: index.html
 ---
 
-## Notes
+## 📝 Notes
 
 - Firestore is configured in test mode for development purposes
 - Data is automatically stored in cloud database
 - No authentication required for demo version
+
+---
+
+## 🔐 Security Notice
+
+The Firebase API key is intentionally exposed in this repository as GitHub Pages does not support server-side environment variables, making it impossible to fully conceal frontend credentials.
+
+The following security measures have been implemented to prevent unauthorised use:
+
+- **Authorised domain restriction** – Firebase is configured to accept requests only from the authorised domain. Connections originating from any other origin are blocked at the Firebase level.
+- **API key referrer restriction** – The API key is restricted via Google Cloud Console to permit requests solely from the designated domain. Any request from an unrecognised referrer is rejected at the Google level.
+
+Whilst the key is visible, these measures ensure it cannot be exploited from outside the authorised domain.
 
 ---
 
@@ -85,7 +103,3 @@ This project uses **Firebase Firestore** as a backend database to store calculat
 
 ## 👨‍💻 Author
 Shohei Kotera
-This app has created as a portfolio project to demonstrate:
-- Frontend development skills
-- Firebase integration
-- Cloud database usage
