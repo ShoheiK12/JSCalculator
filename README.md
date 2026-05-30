@@ -1,10 +1,9 @@
 # Tech skills
 <p style="display: inline">
   <!-- フロントエンドのフレームワーク一覧 -->
-  <img src="https://img.shields.io/badge/-Node.js-000000.svg?logo=node.js&style=for-the-badge">
-  <img src="https://img.shields.io/badge/-Next.js-000000.svg?logo=next.js&style=for-the-badge">
-  <img src="https://img.shields.io/badge/-TailwindCSS-000000.svg?logo=tailwindcss&style=for-the-badge">
-  <img src="https://img.shields.io/badge/-React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
+  <img src="https://img.shields.io/badge/-HTML-000000.svg?logo=HTML&style=for-the-badge">
+  <img src="https://img.shields.io/badge/-CSS-000000.svg?logo=css&style=for-the-badge">
+  <img src="https://img.shields.io/badge/-JavaScript-20232A?style=for-the-badge&logo=JavasScript&logoColor=61DAFB">
   <!-- バックエンドのフレームワーク一覧 -->
   <img src="https://img.shields.io/badge/-Django-092E20.svg?logo=django&style=for-the-badge">
   <!-- バックエンドの言語一覧 -->
