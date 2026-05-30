@@ -38,11 +38,7 @@ This project uses **Firebase Firestore** as a backend database to store calculat
 
 ### Stored Data Structure
 
-history (collection)
-├── document
-│ ├── expression: "3+5"
-│ ├── result: 8
-│ ├── createdAt: timestamp
+<img width="173" height="83" alt="Image" src="https://github.com/user-attachments/assets/3c1600b4-74b2-4d84-a172-cbcca0ec1484" />
 
 ---
 
