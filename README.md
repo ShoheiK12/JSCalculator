@@ -6,7 +6,7 @@ A web-based calculator built with HTML, CSS and JavaScript, featuring a clean us
 ## 🎥 Live Demo
 GitHub Pages:
 Available at [here](https://shoheik12.github.io/).
-(Click on <Calculator>)
+(Click on **Calculator**)
 ---
 
 ## ✨ Features
