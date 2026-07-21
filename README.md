@@ -3,13 +3,12 @@
 A web-based calculator built with HTML, CSS and JavaScript, featuring a clean user interface and basic arithmetic operations. It integrates Firebase Firestore to store and retrieve calculation history in the cloud. Users can view their past calculations from the last seven days via a modal window.
 ---
 
-## 🎥 Live Demo
-GitHub Pages:
-Available at [here](https://shoheik12.github.io/).
-(Click on **Calculator**)
+## Live Demo
+Available at [here](https://shoheik12.github.io/JSCalculator/JSCalculator.html).
+
 ---
 
-## ✨ Features
+## Features
 
 - Basic arithmetic operations (+, −, ×, ÷)
 - Decimal input support
@@ -22,7 +21,7 @@ Available at [here](https://shoheik12.github.io/).
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - HTML5
 - CSS3
@@ -32,7 +31,7 @@ Available at [here](https://shoheik12.github.io/).
 
 ---
 
-## 📱 Firebase Integration
+## Firebase Integration
 
 This project uses **Firebase Firestore** as a backend database to store calculation history.
 
@@ -67,7 +66,7 @@ cd JSCalculator
 You can run the project locally by simply opening: index.html
 ---
 
-## 📝 Notes
+## Notes
 
 - Firestore is configured in test mode for development purposes
 - Data is automatically stored in cloud database
@@ -75,7 +74,7 @@ You can run the project locally by simply opening: index.html
 
 ---
 
-## 🔐 Security Notice
+## Security Notice
 
 The Firebase API key is intentionally exposed in this repository as GitHub Pages does not support server-side environment variables, making it impossible to fully conceal frontend credentials.
 
@@ -88,7 +87,7 @@ Whilst the key is visible, these measures ensure it cannot be exploited from out
 
 ---
 
-## 📈 Future Improvements
+## Future Improvements
 
 - Add delete history feature
 - Add user authentication (Firebase Auth)
@@ -98,5 +97,5 @@ Whilst the key is visible, these measures ensure it cannot be exploited from out
 
 ---
 
-## 👨‍💻 Author
+## Author
 Shohei Kotera
